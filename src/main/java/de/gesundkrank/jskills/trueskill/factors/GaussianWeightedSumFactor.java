@@ -187,6 +187,16 @@ public class GaussianWeightedSumFactor extends GaussianFactor {
         double newPrecisionMean = newPrecision * weightedMeanSum;
         double anotherNewPrecisionMean = anotherNewPrecision * anotherWeightedMeanSum;
 
+        // AS value of newPrecision == 0.0 and weightedMeanSum is Infinity so
+        // 0.0 * Infinity  = NaN which is causing the issues further down
+        // 0.0 * Infinity  = 0.0 would not cause any issues in calculations.
+        if (Double.isNaN(newPrecisionMean)) {
+            newPrecisionMean = 0.0;
+        }
+        if (Double.isNaN(anotherNewPrecisionMean)) {
+            anotherNewPrecisionMean = 0.0;
+        }
+
         GaussianDistribution oldMarginalWithoutMessage = divide(marginal0, message0);
 
         GaussianDistribution

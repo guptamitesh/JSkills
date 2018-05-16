@@ -7,17 +7,13 @@ A detailed implementation of the TrueSkill algorithm in Java.
 Usage
 -----
 
-Install this package to your local Maven repository
-
-    mvn install
-
-and define the dependency in your project as following
+Add the dependency to your Maven file:
 
 ```XML
 <dependency>
     <groupId>de.gesundkrank.jskills</groupId>
     <artifactId>jskills</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
