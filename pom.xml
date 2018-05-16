@@ -18,6 +18,7 @@
     </license>
   </licenses>
   <scm>
+    <connection>scm:git:https://github.com/gesundkrank/JSkills.git</connection>
     <url>https://github.com/gesundkrank/JSkills.git</url>
   </scm>
 
