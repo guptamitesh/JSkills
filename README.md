@@ -13,7 +13,7 @@ Add the dependency to your Maven file:
 <dependency>
     <groupId>de.gesundkrank.jskills</groupId>
     <artifactId>jskills</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
