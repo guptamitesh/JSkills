@@ -2,7 +2,7 @@ package de.gesundkrank.jskills.factorgraphs;
 
 public class ScheduleLoop<T> extends Schedule<T> {
 
-    private static final int MAX_ITERATIONS = 100;
+    private static final int MAX_ITERATIONS = 300;
 
     private final double maxDelta;
     private final Schedule<T> scheduleToLoop;
